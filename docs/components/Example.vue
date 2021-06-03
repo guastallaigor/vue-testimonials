@@ -1,48 +1,10 @@
 <template>
   <div id="testimonials">
-    <h1 id="main-title">Vue Testimonials</h1>
-    <VueTestimonials :items="items" />
+    <img src="@/static/1.png" alt="First image" />
+    <img class="middle-image" src="@/static/2.png" alt="Second image" />
+    <img class="last-image" src="@/static/3.png" alt="Third image" />
   </div>
 </template>
-
-<script lang="ts">
-import { defineComponent, ref } from 'vue'
-import VueTestimonials from '@/component/VueTestimonials.vue'
-import { Testimonial } from '@/types/global'
-
-export default defineComponent({
-  name: 'App',
-  components: {
-    VueTestimonials,
-  },
-  setup() {
-    const items = ref<Testimonial[]>([
-      {
-        title: 'Excelent',
-        content:
-          '"I just updated my site and it was so simple! Thanks for being so awesome!"',
-        image: 'https://i.pravatar.cc/160?img=13',
-        author: 'Jason',
-      },
-      {
-        title: 'Outstanding',
-        content:
-          '"She was thoughtful during the entire process and exceed my expectations!"',
-        image: 'https://i.pravatar.cc/160?img=31',
-        author: 'Emily',
-      },
-      {
-        title: 'The best',
-        content:
-          '"My new site is so much faster and easier to work with. Thanks guys!"',
-        image: 'https://i.pravatar.cc/160?img=45',
-        author: 'Amelia',
-      },
-    ])
-    return { items }
-  },
-})
-</script>
 
 <style>
 *,
@@ -68,16 +30,16 @@ html {
     sans-serif;
   -webkit-font-smoothing: antialiased;
 }
-#testimonials {
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  position: absolute;
-}
 #main-title {
   color: #ffffff;
   font-size: 3rem;
   margin-bottom: 70px;
   text-align: center;
+}
+.middle-image {
+  margin: 50px 0;
+}
+.last-image {
+  margin-bottom: 50px;
 }
 </style>

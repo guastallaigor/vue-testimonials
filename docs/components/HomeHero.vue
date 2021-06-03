@@ -73,7 +73,7 @@
 
 <style scoped>
 .hero-bg-wrapper {
-  background-image: url('https://innerchange.com.au/wp-content/uploads/2017/12/Teal-geometric-4k-wallpaper-1440x900.jpg');
+  background-image: url('@/static/bg.jpg');
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;

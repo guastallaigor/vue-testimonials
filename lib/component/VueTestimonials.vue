@@ -172,7 +172,7 @@ export default defineComponent({
       default: 8000,
     },
     items: {
-      type: Object as () => Testimonial[],
+      type: Array as () => Testimonial[],
       required: true,
     },
     arrowColor: {
