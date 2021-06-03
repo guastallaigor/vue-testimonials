@@ -1,17 +1,16 @@
-// Import vue component
+import { App } from 'vue'
 import VueTestimonials from './component/VueTestimonials.vue'
 
-// install function executed by Vue.use()
-const install = function (Vue: any) {
-  if ((install as any).installed) return
-  ;(install as any).installed = true
-  Vue.component('VueTestimonials', VueTestimonials)
+let installed = false
+
+const installFunction = (Vue: App) => {
+  if (installed) return
+  installed = true
+  Vue.component(VueTestimonials.name, VueTestimonials)
 }
 
-// Create module definition for Vue.use()
-const plugin = { install }
+const plugin = { install: installFunction }
 
-// To auto-install when vue is found
 let GlobalVue = null
 
 if (typeof window !== 'undefined') {
@@ -24,12 +23,6 @@ if (GlobalVue) {
   GlobalVue.use(plugin)
 }
 
-// Inject install function into component - allows component
-// to be registered via Vue.use() as well as Vue.component()
-VueTestimonials.install = install
+VueTestimonials.install = installFunction
 
-// Export component by default
 export default VueTestimonials
-
-// Export single (backwards compatibility)
-export { VueTestimonials }
