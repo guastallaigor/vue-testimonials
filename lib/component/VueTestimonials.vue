@@ -153,6 +153,7 @@ import { Testimonial, VueTestimonialsProps } from '@/local-types/global'
 import IconChevronrightLg from '@/assets/images/icon-chevronright-lg.svg'
 import IconChevronleftLg from '@/assets/images/icon-chevronleft-lg.svg'
 import Ball from '@/assets/images/ball.svg'
+import '@/component/style.css'
 
 const defaultColor = '#FFFFFF'
 const defaultArrowSize = '64px'
