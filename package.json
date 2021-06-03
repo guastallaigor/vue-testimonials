@@ -1,0 +1,102 @@
+{
+  "name": "vue-testimonials",
+  "version": "0.1.0",
+  "description": "Vue Testimonials is a Vue 3 testimonials component made with Vite and TypeScript",
+  "homepage": "https://github.com/guastallaigor/vue-testimonials#readme",
+  "author": {
+    "name": "Igor Guastalla de Lima",
+    "email": "limaguastallaigor@gmail.com"
+  },
+  "main": "./dist/vue-testimonials-vue.umd.js",
+  "module": "./dist/vue-testimonials-vue.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vue-testimonials-vue.es.js",
+      "require": "./dist/vue-testimonials-vue.umd.js"
+    }
+  },
+  "unpkg": "dist/vue-testimonials.umd.js",
+  "cdn": "dist/vue-testimonials.umd.js",
+  "jsdelivr": "dist/vue-testimonials.umd.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "private": false,
+  "license": "MIT",
+  "bugs": "https://github.com/guastallaigor/vue-testimonials/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/guastallaigor/vue-testimonials"
+  },
+  "keywords": [
+    "vue-testimonials",
+    "testimonials",
+    "vite",
+    "vue",
+    "vue3",
+    "vuejs",
+    "typescript",
+    "vue-components",
+    "ui",
+    "framework"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "serve": "vite preview",
+    "lint:eslint": "eslint lib/**/*.{ts,vue}",
+    "lint:prettier": "prettier -w -u lib/**/*.{ts,vue}",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "vue": "^3.0.5"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^19.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.0",
+    "@types/node": "^15.9.0",
+    "@typescript-eslint/eslint-plugin": "^4.26.0",
+    "@typescript-eslint/parser": "^4.26.0",
+    "@vitejs/plugin-vue": "^1.2.3",
+    "@vue/compiler-sfc": "^3.0.5",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/eslint-config-typescript": "^7.0.0",
+    "commitizen": "^4.2.4",
+    "eslint": "^7.27.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-vue": "^7.10.0",
+    "husky": "^6.0.0",
+    "prettier": "^2.3.0",
+    "typescript": "^4.1.3",
+    "vite": "^2.3.5",
+    "vite-svg-loader": "^2.0.2",
+    "vue-eslint-parser": "^7.6.0",
+    "vue-tsc": "^0.0.24"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ],
+    "rules": {
+      "subject-case": [
+        0,
+        "never",
+        "sentence-case"
+      ],
+      "subject-full-stop": [
+        0,
+        "never",
+        "."
+      ]
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  }
+}
