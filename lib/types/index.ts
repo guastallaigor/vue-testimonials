@@ -1,1 +1,1 @@
-export { TEmit, TProps } from "./global";
+export { VueTestimonialsProps, Testimonial } from './global'

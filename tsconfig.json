@@ -8,12 +8,14 @@
     "jsx": "preserve",
     "sourceMap": true,
     "resolveJsonModule": true,
+    "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
     "importHelpers": true,
     "lib": ["esnext", "dom"],
     "baseUrl": ".",
+    "types": ["vite-svg-loader", "vite/client"],
     "paths": {
       "@/*": ["lib/*"]
     }
