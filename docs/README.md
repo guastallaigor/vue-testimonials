@@ -18,5 +18,3 @@ Then you can start edit the [content](./content) directory.
 $ yarn generate
 $ serve dist/ # npm install -g serve
 ```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
