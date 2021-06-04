@@ -1,6 +1,6 @@
 {
   "name": "vue-testimonials",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Vue Testimonials is a Vue 3 testimonials component made with Vite and TypeScript",
   "homepage": "https://github.com/guastallaigor/vue-testimonials#readme",
   "author": {
@@ -9,12 +9,6 @@
   },
   "main": "./dist/vue-testimonials.umd.js",
   "module": "./dist/vue-testimonials.es.js",
-  "exports": {
-    ".": {
-      "import": "./dist/vue-testimonials.es.js",
-      "require": "./dist/vue-testimonials.umd.js"
-    }
-  },
   "unpkg": "dist/vue-testimonials.umd.js",
   "cdn": "dist/vue-testimonials.umd.js",
   "jsdelivr": "dist/vue-testimonials.umd.js",
