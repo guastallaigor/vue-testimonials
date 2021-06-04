@@ -10,8 +10,6 @@ $ yarn install
 $ yarn dev
 ```
 
-Then you can start edit the [content](./content) directory.
-
 # Test for production
 
 ```bash
