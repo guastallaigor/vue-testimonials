@@ -3,7 +3,7 @@ import VueTestimonials from './component/VueTestimonials.vue'
 
 let installed = false
 
-function install(Vue: App): void {
+function installFunction(Vue: App): void {
   if (installed) return
   installed = true
   Vue.component(VueTestimonials.name, VueTestimonials)
@@ -11,7 +11,7 @@ function install(Vue: App): void {
 
 let GlobalVue = null
 
-const plugin = { install }
+const plugin = { install: installFunction }
 
 if (typeof window !== 'undefined') {
   GlobalVue = (window as any).Vue
@@ -23,4 +23,4 @@ if (GlobalVue) {
   GlobalVue.use(plugin)
 }
 
-export default { install }
+export default { install: installFunction }
