@@ -3,24 +3,24 @@ import VueTestimonials from './component/VueTestimonials.vue'
 
 let installed = false
 
-function installFunction(Vue: App): void {
+function install(Vue: App): void {
   if (installed) return
   installed = true
   Vue.component(VueTestimonials.name, VueTestimonials)
 }
 
-let GlobalVue = null
+let GlobalVue: any
 
-const plugin = { install: installFunction }
+const plugin = { install }
 
-if (typeof window !== 'undefined') {
-  GlobalVue = (window as any).Vue
-} else if (typeof global !== 'undefined') {
-  GlobalVue = (global as any).Vue
+if (window && 'Vue' in window) {
+  GlobalVue = window['Vue']
+} else if (global && 'Vue' in global) {
+  GlobalVue = global['Vue']
 }
 
-if (GlobalVue) {
+if (GlobalVue && typeof GlobalVue.use === 'function') {
   GlobalVue.use(plugin)
 }
 
-export default { install: installFunction }
+export default { install }

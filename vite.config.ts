@@ -1,6 +1,7 @@
 import type { UserConfig } from 'vite'
 import svgLoader from 'vite-svg-loader'
 import vue from '@vitejs/plugin-vue'
+import typescript from 'rollup-plugin-typescript2'
 const path = require('path')
 
 const config: UserConfig = {
@@ -12,7 +13,7 @@ const config: UserConfig = {
       },
     ],
   },
-  plugins: [vue(), svgLoader()],
+  plugins: [vue(), svgLoader(), typescript()],
   build: {
     lib: {
       entry: path.resolve(__dirname, 'lib/index.ts'),
