@@ -33,11 +33,11 @@ $ yarn
 
 This project follows the [commitlint](https://github.com/conventional-changelog/commitlint) guidelines, with minor changes.
 
-You can commit using `npm run commit` to help you with that.
+You can commit using `yarn commit` to help you with that.
 
 There's a `pre-push` hook that checks for lint errors before you can push it.
 
-If an error occurs, you can use the `npm run commit:retry` command that runs the previous `npm run commit` that you already filled.
+If an error occurs, you can use the `yarn commit:retry` command that runs the previous `yarn commit` that you already filled.
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/C1C63QCB8)
 
