@@ -167,50 +167,86 @@ export default defineComponent({
     Ball,
   },
   props: {
+    /**
+     * Number in milliseconds to change from one testimonial to the other
+     */
     interval: {
       type: Number,
       default: 8000,
     },
+    /**
+     * Array of objects, that each object represents one testimonial
+     */
     items: {
       type: Array as () => Testimonial[],
       required: true,
     },
+    /**
+     * Specify the arrow's color here
+     */
     arrowColor: {
       type: String,
       default: defaultColor,
     },
+    /**
+     * Specify the arrow's width here
+     */
     arrowWidth: {
       type: [Number, String],
       default: defaultArrowSize,
     },
+    /**
+     * Specify the arrow's height here
+     */
     arrowHeight: {
       type: [Number, String],
       default: defaultArrowSize,
     },
+    /**
+     * Specify the ball's active color class, that are located at the bottom of the testimonial
+     */
     ballActiveColorClass: {
       type: String,
       default: null,
     },
+    /**
+     * Specify the ball's inactive color class, that are located at the bottom of the testimonial
+     */
     ballInactiveColorClass: {
       type: String,
       default: null,
     },
+    /**
+     * Specify the ball's width, that are located at the bottom of the testimonial
+     */
     ballWidth: {
       type: [Number, String],
       default: defaultBallSize,
     },
+    /**
+     * Specify the ball's height, that are located at the bottom of the testimonial
+     */
     ballHeight: {
       type: [Number, String],
       default: defaultBallSize,
     },
+    /**
+     * Pass here classes that you want in order to customize the testimonial's title
+     */
     titleClasses: {
       type: [Object, String],
       default: null,
     },
+    /**
+     * Pass here classes that you want in order to customize the testimonial's author
+     */
     authorClasses: {
       type: [Object, String],
       default: null,
     },
+    /**
+     * Pass here classes that you want in order to customize the testimonial's content
+     */
     contentClasses: {
       type: [Object, String],
       default: null,

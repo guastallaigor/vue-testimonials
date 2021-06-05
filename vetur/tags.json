@@ -1,0 +1,36 @@
+{
+  "vue-testimonials": {
+    "attributes": [
+      "interval",
+      "items",
+      "arrowColor",
+      "arrowWidth",
+      "arrowHeight",
+      "ballActiveColorClass",
+      "ballInactiveColorClass",
+      "ballWidth",
+      "ballHeight",
+      "titleClasses",
+      "authorClasses",
+      "contentClasses"
+    ],
+    "description": ""
+  },
+  "VueTestimonials": {
+    "attributes": [
+      "interval",
+      "items",
+      "arrowColor",
+      "arrowWidth",
+      "arrowHeight",
+      "ballActiveColorClass",
+      "ballInactiveColorClass",
+      "ballWidth",
+      "ballHeight",
+      "titleClasses",
+      "authorClasses",
+      "contentClasses"
+    ],
+    "description": ""
+  }
+}

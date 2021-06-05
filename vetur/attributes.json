@@ -1,0 +1,98 @@
+{
+  "vue-testimonials/interval": {
+    "type": "number",
+    "description": "Number in milliseconds to change from one testimonial to the other"
+  },
+  "VueTestimonials/interval": {
+    "type": "number",
+    "description": "Number in milliseconds to change from one testimonial to the other"
+  },
+  "vue-testimonials/items": {
+    "type": "array",
+    "description": "Array of objects, that each object represents one testimonial"
+  },
+  "VueTestimonials/items": {
+    "type": "array",
+    "description": "Array of objects, that each object represents one testimonial"
+  },
+  "vue-testimonials/arrowColor": {
+    "type": "string",
+    "description": "Specify the arrow's color here"
+  },
+  "VueTestimonials/arrowColor": {
+    "type": "string",
+    "description": "Specify the arrow's color here"
+  },
+  "vue-testimonials/arrowWidth": {
+    "type": "number|string",
+    "description": "Specify the arrow's width here"
+  },
+  "VueTestimonials/arrowWidth": {
+    "type": "number|string",
+    "description": "Specify the arrow's width here"
+  },
+  "vue-testimonials/arrowHeight": {
+    "type": "number|string",
+    "description": "Specify the arrow's height here"
+  },
+  "VueTestimonials/arrowHeight": {
+    "type": "number|string",
+    "description": "Specify the arrow's height here"
+  },
+  "vue-testimonials/ballActiveColorClass": {
+    "type": "string",
+    "description": "Specify the ball's active color class, that are located at the bottom of the testimonial"
+  },
+  "VueTestimonials/ballActiveColorClass": {
+    "type": "string",
+    "description": "Specify the ball's active color class, that are located at the bottom of the testimonial"
+  },
+  "vue-testimonials/ballInactiveColorClass": {
+    "type": "string",
+    "description": "Specify the ball's inactive color class, that are located at the bottom of the testimonial"
+  },
+  "VueTestimonials/ballInactiveColorClass": {
+    "type": "string",
+    "description": "Specify the ball's inactive color class, that are located at the bottom of the testimonial"
+  },
+  "vue-testimonials/ballWidth": {
+    "type": "number|string",
+    "description": "Specify the ball's width, that are located at the bottom of the testimonial"
+  },
+  "VueTestimonials/ballWidth": {
+    "type": "number|string",
+    "description": "Specify the ball's width, that are located at the bottom of the testimonial"
+  },
+  "vue-testimonials/ballHeight": {
+    "type": "number|string",
+    "description": "Specify the ball's height, that are located at the bottom of the testimonial"
+  },
+  "VueTestimonials/ballHeight": {
+    "type": "number|string",
+    "description": "Specify the ball's height, that are located at the bottom of the testimonial"
+  },
+  "vue-testimonials/titleClasses": {
+    "type": "object|string",
+    "description": "Pass here classes that you want in order to customize the testimonial's title"
+  },
+  "VueTestimonials/titleClasses": {
+    "type": "object|string",
+    "description": "Pass here classes that you want in order to customize the testimonial's title"
+  },
+  "vue-testimonials/authorClasses": {
+    "type": "object|string",
+    "description": "Pass here classes that you want in order to customize the testimonial's author"
+  },
+  "VueTestimonials/authorClasses": {
+    "type": "object|string",
+    "description": "Pass here classes that you want in order to customize the testimonial's author"
+  },
+  "vue-testimonials/contentClasses": {
+    "type": "object|string",
+    "description": "Pass here classes that you want in order to customize the testimonial's content"
+  },
+  "VueTestimonials/contentClasses": {
+    "type": "object|string",
+    "description": "Pass here classes that you want in order to customize the testimonial's content"
+  }
+}

@@ -1,6 +1,6 @@
 {
   "name": "vue-testimonials",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "Vue Testimonials is a Vue 3 testimonials component made with Vite and TypeScript",
   "homepage": "https://github.com/guastallaigor/vue-testimonials#readme",
   "author": {
@@ -14,7 +14,8 @@
   "jsdelivr": "dist/vue-testimonials.umd.js",
   "types": "dist/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "vetur"
   ],
   "private": false,
   "license": "MIT",
@@ -22,6 +23,10 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/guastallaigor/vue-testimonials"
+  },
+  "vetur": {
+    "tags": "vetur/tags.json",
+    "attributes": "vetur/attributes.json"
   },
   "keywords": [
     "vue-testimonials",
