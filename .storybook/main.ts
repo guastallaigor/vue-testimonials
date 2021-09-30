@@ -20,6 +20,10 @@ module.exports = {
       ...config.resolve.alias,
       '@': path.resolve(__dirname, '../lib'),
     }
+    console.log(config, ':1')
+    if (config.resolve.extensions && Array.isArray(config.resolve.extensions))
+      config.resolve.extensions.push('.ts', '.tsx')
+    else config.resolve.extensions = ['.ts', '.tsx']
     return config
   },
 }

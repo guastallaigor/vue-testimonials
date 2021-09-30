@@ -1,3 +1,4 @@
+// @ts-ignore: Vue component TS import error
 import VueTestimonials from '../lib/component/VueTestimonials.vue'
 
 export default {
@@ -25,7 +26,7 @@ export default {
   },
 }
 
-const Template = (args) => ({
+const Template = (args: any) => ({
   components: { VueTestimonials },
   setup() {
     return { args }
@@ -33,7 +34,7 @@ const Template = (args) => ({
   template: '<vue-testimonials v-bind="args" />',
 })
 
-export const Main = Template.bind({})
+export const Main: any = Template.bind({})
 Main.args = {
   interval: 8000,
   items: [

@@ -19,4 +19,20 @@
   "typescript.updateImportsOnFileMove.enabled": "always",
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#2ebcfc",
+    "activityBar.activeBorder": "#dc0399",
+    "activityBar.background": "#2ebcfc",
+    "activityBar.foreground": "#15202b",
+    "activityBar.inactiveForeground": "#15202b99",
+    "activityBarBadge.background": "#dc0399",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "statusBar.background": "#04a9f3",
+    "statusBar.foreground": "#15202b",
+    "statusBarItem.hoverBackground": "#0386c1",
+    "titleBar.activeBackground": "#04a9f3",
+    "titleBar.activeForeground": "#15202b",
+    "titleBar.inactiveBackground": "#04a9f399",
+    "titleBar.inactiveForeground": "#15202b99"
+  },
 }
