@@ -21,23 +21,7 @@
 
 > **Note**: Contributions are very welcomed, however is very important to open a new issue using the issue template **before** you start working on anything, so we can discuss it before hand
 
-Fork the project and enter this commands in your terminal
-
-```sh
-$ git clone https://github.com/YOUR_GITHUB_USERNAME/vue-testimonials.git
-$ cd vue-testimonials
-$ yarn
-```
-
-### Commitlint
-
-This project follows the [commitlint](https://github.com/conventional-changelog/commitlint) guidelines, with minor changes.
-
-You can commit using `yarn commit` to help you with that.
-
-There's a `pre-push` hook that checks for lint errors before you can push it.
-
-If an error occurs, you can use the `yarn commit:retry` command that runs the previous `yarn commit` that you already filled.
+Check our guide lines [here](https://vue-testimonials.netlify.app/contributing/guide-lines)
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/C1C63QCB8)
 
