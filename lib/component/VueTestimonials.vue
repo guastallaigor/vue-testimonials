@@ -165,7 +165,7 @@ export default defineComponent({
     IconChevronrightLg,
     IconChevronleftLg,
     Ball,
-  },
+  } as any,
   props: {
     /**
      * Number in milliseconds to change from one testimonial to the other
