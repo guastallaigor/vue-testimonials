@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`When I create the VueTestimonials component should match default component snapshot 1`] = `
+"<section class=\\"vue-testimonials\\">
+  <div class=\\"flex-row flex flex-nowrap text-white mt-6 pb-10 lg:pb-20 mb-40\\">
+    <div class=\\"mx-auto\\">
+      <div>
+        <div class=\\"relative\\">
+          <div class=\\"w-full\\">
+            <div class=\\"item transition-opacity duration-300 ease-in-out px-16 lg:px-0 active\\">
+              <div class=\\"flex justify-center flex-wrap items-center text-center\\"><img src=\\"https://i.pravatar.cc/160?img=11\\" class=\\"mr-3 lazyload rounded-full object-cover image w-40 h-40\\" alt=\\"Jason\\">
+                <div class=\\"media-body w-full\\">
+                  <h1 class=\\"mt-12 text-2xl uppercase tracking-wider font-normal\\">Excelent</h1>
+                  <h2 class=\\"mt-5 text-lg\\">\\"I just updated my site and it was so simple! Thanks for being so awesome!\\"</h2>
+                  <div class=\\"mt-5 text-md font-bold select-none\\">Jason</div>
+                </div>
+              </div>
+            </div>
+            <div class=\\"item transition-opacity duration-300 ease-in-out px-16 lg:px-0 inactive\\">
+              <div class=\\"flex justify-center flex-wrap items-center text-center\\"><img src=\\"https://i.pravatar.cc/160?img=31\\" class=\\"mr-3 lazyload rounded-full object-cover image w-40 h-40\\" alt=\\"Emily\\">
+                <div class=\\"media-body w-full\\">
+                  <h1 class=\\"mt-12 text-2xl uppercase tracking-wider font-normal\\">Outstanding</h1>
+                  <h2 class=\\"mt-5 text-lg\\">\\"She was thoughtful during the entire process and exceed my expectations!\\"</h2>
+                  <div class=\\"mt-5 text-md font-bold select-none\\">Emily</div>
+                </div>
+              </div>
+            </div>
+            <div class=\\"item transition-opacity duration-300 ease-in-out px-16 lg:px-0 inactive\\">
+              <div class=\\"flex justify-center flex-wrap items-center text-center\\"><img src=\\"https://i.pravatar.cc/160?img=45\\" class=\\"mr-3 lazyload rounded-full object-cover image w-40 h-40\\" alt=\\"Amelia\\">
+                <div class=\\"media-body w-full\\">
+                  <h1 class=\\"mt-12 text-2xl uppercase tracking-wider font-normal\\">The best</h1>
+                  <h2 class=\\"mt-5 text-lg\\">\\"My new site is so much faster and easier to work with. Thanks guys!\\"</h2>
+                  <div class=\\"mt-5 text-md font-bold select-none\\">Amelia</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class=\\"mt-5 w-full fill-current flex justify-center items-center flex-row z-20 relative\\">
+            <ball.svg class=\\"overflow-hidden cursor-pointer hover:opacity-70 transition-opacity ease-in-out duration-300 mr-1 ball text-gray-600\\" style=\\"width: 20px; height: 20px;\\"></ball.svg>
+            <ball.svg class=\\"overflow-hidden cursor-pointer hover:opacity-70 transition-opacity ease-in-out duration-300 mr-1 ball empty-circle\\" style=\\"width: 20px; height: 20px;\\"></ball.svg>
+            <ball.svg class=\\"overflow-hidden cursor-pointer hover:opacity-70 transition-opacity ease-in-out duration-300 mr-1 ball empty-circle\\" style=\\"width: 20px; height: 20px;\\"></ball.svg>
+          </div><a class=\\"absolute top-1/2 left-0\\" role=\\"button\\" rel=\\"noopener noreferrer\\" aria-label=\\"Previous arrow button\\" href=\\"#\\">
+            <icon-chevronleft-lg.svg style=\\"color: rgb(255, 255, 255); width: 64px; height: 64px;\\" class=\\"hover:opacity-70 transition-opacity ease-in-out duration-500 lg:w-full arrow\\"></icon-chevronleft-lg.svg>
+          </a><a class=\\"absolute top-1/2 right-0\\" role=\\"button\\" href=\\"#\\" aria-label=\\"Next arrow button\\" rel=\\"noopener noreferrer\\">
+            <icon-chevronright-lg.svg style=\\"color: rgb(255, 255, 255); width: 64px; height: 64px;\\" class=\\"hover:opacity-70 transition-opacity ease-in-out duration-500 lg:w-full arrow\\"></icon-chevronright-lg.svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>"
+`;
