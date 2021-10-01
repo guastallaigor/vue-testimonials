@@ -48,6 +48,9 @@
     "lint:prettier": "prettier -w -u lib/**/*.{ts,vue}",
     "prepare": "husky install",
     "test": "jest --clearCache && jest",
+    "commit": "git-cz",
+    "commit:retry": "git-cz --retry",
+    "commitmsg": "commitlint -e",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
