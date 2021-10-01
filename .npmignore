@@ -12,6 +12,10 @@ lib/stories/
 *.stories.js
 *.stories.ts
 coverage
+stub/
+babel.config.js
+*.spec.ts
+__snapshots__
 
 .storybook/
 .idea

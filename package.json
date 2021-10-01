@@ -47,7 +47,7 @@
     "lint:eslint": "eslint lib/**/*.{ts,vue}",
     "lint:prettier": "prettier -w -u lib/**/*.{ts,vue}",
     "prepare": "husky install",
-    "test": "jest __tests__ --no-cache --config jest.config.js --testTimeout=10000",
+    "test": "jest --clearCache && jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
@@ -55,10 +55,8 @@
     "vue": "^3.0.5"
   },
   "devDependencies": {
-    "@babel/core": "^7.15.5",
     "@commitlint/cli": "^13.2.0",
     "@commitlint/config-conventional": "^13.2.0",
-    "@rollup/plugin-babel": "^5.3.0",
     "@rollup/plugin-commonjs": "^20.0.0",
     "@rollup/plugin-node-resolve": "^13.0.5",
     "@storybook/addon-actions": "^6.3.8",
@@ -76,7 +74,7 @@
     "@vue/eslint-config-prettier": "^6.0.0",
     "@vue/eslint-config-typescript": "^7.0.0",
     "@vue/test-utils": "next",
-    "babel-loader": "^8.2.2",
+    "@vue/vue3-jest": "^27.0.0-alpha.1",
     "clean-css": "^5.2.0",
     "commitizen": "^4.2.4",
     "eslint": "^7.32.0",
@@ -93,8 +91,7 @@
     "vite-svg-loader": "^2.2.0",
     "vue-eslint-parser": "^7.11.0",
     "vue-loader": "^16.8.1",
-    "vue-tsc": "^0.3.0",
-    "vue3-jest": "^27.0.0-alpha.1"
+    "vue-tsc": "^0.3.0"
   },
   "commitlint": {
     "extends": [

@@ -20,7 +20,7 @@ module.exports = {
   collectCoverage: true,
 
   // An array of glob patterns indicating a set of files for which coverage information should be collected
-  collectCoverageFrom: ['lib/**/*.{js,ts}'],
+  collectCoverageFrom: ['lib/**/*.vue'],
 
   // The directory where Jest should output its coverage files
   // coverageDirectory: undefined,
@@ -65,27 +65,30 @@ module.exports = {
   // globalTeardown: undefined,
 
   // A set of global variables that need to be available in all test environments
-  globals: {
-    'ts-jest': {
-      tsconfig: 'jest.tsconfig.json',
-    },
-  },
+  // globals: {
+  //   'ts-jest': {
+  //     tsconfig: 'jest.tsconfig.json',
+  //   },
+  // },
 
   // The maximum amount of workers used to run your tests. Can be specified as % or a number. E.g. maxWorkers: 10% will use 10% of your CPU amount + 1 as the maximum worker number. maxWorkers: 2 will use a maximum of 2 workers.
   // maxWorkers: "50%",
 
   // An array of directory names to be searched recursively up from the requiring module's location
-  moduleDirectories: ['node_modules', 'lib'],
+  // moduleDirectories: ['node_modules', 'lib'],
 
   // An array of file extensions your modules use
-  moduleFileExtensions: ['js', 'json', 'ts', 'node'],
+  moduleFileExtensions: ['js', 'ts', 'json', 'vue'],
 
   // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
-  // moduleNameMapper: {},
+  moduleNameMapper: {
+    '^@/(.*)$': '<rootDir>/lib/$1',
+    // '\\.(css|scss|less)$': '<rootDir>/stub/css-stub.js',
+  },
 
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
   // modulePathIgnorePatterns: [],
-  modulePaths: ['<rootDir>/lib'],
+  // modulePaths: ['<rootDir>/lib'],
 
   // Activates notifications for test results
   // notify: false,
@@ -145,7 +148,7 @@ module.exports = {
   // testLocationInResults: false,
 
   // The glob patterns Jest uses to detect test files
-  testMatch: ['**/__tests__/**/*.spec.{js,ts}'],
+  testMatch: ['**/lib/**/*.spec.{js,ts}'],
 
   // An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
   // testPathIgnorePatterns: [
@@ -170,12 +173,18 @@ module.exports = {
   // A map from regular expressions to paths to transformers
   transform: {
     // "^.+\\.js$": "./jestTransform.config.js",
-    '^.+\\.[tj]s$': 'ts-jest',
-    '^.+\\.vue$': 'vue3-jest',
+    '^.+\\.vue$': '@vue/vue3-jest',
+    '^.+\\.ts$': 'ts-jest',
+    '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
+      '<rootDir>/stub/asset-stub.js',
+    '\\.(css|less)$': '<rootDir>/stub/asset-stub.js',
+    '^.+\\.js$': 'ts-jest',
+    // '^.+\\.(ts|js|html|svg)$': 'ts-jest',
+    // '^.+\\.svg$': 'jest-svg-transformer',
   },
 
   // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
-  transformIgnorePatterns: ['/node_modules/(?!vue-awesome)'],
+  // transformIgnorePatterns: ['/node_modules/(?!vue-awesome)'],
 
   // An array of regexp pattern strings that are matched against all modules before the module loader will automatically return a mock for them
   // unmockedModulePathPatterns: undefined,
